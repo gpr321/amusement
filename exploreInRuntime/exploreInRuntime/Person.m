@@ -7,12 +7,12 @@
 //
 
 #import "Person.h"
-#import "NSObject+Method.h"
+#import "NSObject+GP.h"
 
 @implementation Person
 
 //+ (void)load{
-//    [self swizzleOriginSelectorIMP:@selector(sayHi) WithSelector:@selector(sayHello)];
+//    [self swizzleOriginSelectorIMP:@selector(sayHello) WithSelector:@selector(sayHaha)];
 //}
 
 - (void)sayHi{
@@ -20,11 +20,11 @@
 }
 
 - (void)sayHello{
-    NSLog(@"sayHello");
+    NSLog(@"Person sayHello");
 }
 
 + (void)sayHaha{
-    NSLog(@"haha");
+    NSLog(@"Person haha");
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{

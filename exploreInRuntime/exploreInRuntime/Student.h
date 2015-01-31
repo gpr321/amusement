@@ -7,9 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+Notification.h"
 
 @interface Student : NSObject
 
-- (void)sayHi; 
+@property (nonatomic,assign) NSInteger age;
+
+@property (nonatomic,copy) NSString *name;
+
++ (instancetype)studentWithName:(NSString *)name;
+
+- (instancetype)initWithName:(NSString *)name;
+
+- (void)sayHi;
+
+- (void)sayHello;
+
++ (void)sayHaha;
+
 
 @end

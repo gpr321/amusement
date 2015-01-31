@@ -16,6 +16,6 @@
 
 @interface NSObject (GP)
 
-- (NSArray *)ingoreProperties;
+
 
 @end

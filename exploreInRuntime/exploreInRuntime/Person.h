@@ -15,17 +15,6 @@
 
 @property (nonatomic,copy) NSString *name;
 
-@property (nonatomic,assign) float height;
-
-@property (nonatomic,assign) double tall;
-
-@property (nonatomic,assign) int tall1;
-
-@property (nonatomic,assign) long tall2;
-
-@property (nonatomic,assign) long long tall3;
-
-@property (nonatomic,assign) BOOL flag;
 
 - (void)sayHi;
 

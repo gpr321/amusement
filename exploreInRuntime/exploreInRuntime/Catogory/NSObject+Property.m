@@ -28,9 +28,9 @@
             typeEncode = [NSString stringWithUTF8String:ivar_getTypeEncoding(temp)];
             value = [self valueForKeyPath:proName];
             
-            if ( [[[value class] description] isEqualToString:@"__NSCFBoolean"] || [[[value class] description] isEqualToString:@"__NSCFNumber"]) {
-                typeEncode = baseType;
-            }
+//            if ( [[[value class] description] isEqualToString:@"__NSCFBoolean"] || [[[value class] description] isEqualToString:@"__NSCFNumber"]) {
+//                typeEncode = baseType;
+//            }
             
             block(proName,value,typeEncode);
         }
