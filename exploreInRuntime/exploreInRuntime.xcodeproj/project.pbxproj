@@ -21,7 +21,6 @@
 		0413EB8B1A7B16F4005C0A6D /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 0413EB8A1A7B16F4005C0A6D /* NSObject+Property.m */; };
 		041B56D01A7B68EB00159889 /* NSObject+Invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B56CD1A7B68EB00159889 /* NSObject+Invocation.m */; };
 		041B56D11A7B68EB00159889 /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B56CF1A7B68EB00159889 /* NSObject+Notification.m */; };
-		0444A5AB1A7B9592001C4547 /* NSObject+GP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444A5AA1A7B9592001C4547 /* NSObject+GP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +61,7 @@
 		041B56CD1A7B68EB00159889 /* NSObject+Invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Invocation.m"; sourceTree = "<group>"; };
 		041B56CE1A7B68EB00159889 /* NSObject+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
 		041B56CF1A7B68EB00159889 /* NSObject+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
-		0444A5A91A7B9592001C4547 /* NSObject+GP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GP.h"; sourceTree = "<group>"; };
-		0444A5AA1A7B9592001C4547 /* NSObject+GP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GP.m"; sourceTree = "<group>"; };
+		045FB75D1A7E880D005C3E2B /* NSObject+GP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+GP.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +159,7 @@
 				04124D821A7A2CA700B0795C /* NSObject+SetClass.m */,
 				0413EB891A7B16F4005C0A6D /* NSObject+Property.h */,
 				0413EB8A1A7B16F4005C0A6D /* NSObject+Property.m */,
-				0444A5A91A7B9592001C4547 /* NSObject+GP.h */,
-				0444A5AA1A7B9592001C4547 /* NSObject+GP.m */,
+				045FB75D1A7E880D005C3E2B /* NSObject+GP.h */,
 			);
 			path = Catogory;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				0413EB8B1A7B16F4005C0A6D /* NSObject+Property.m in Sources */,
 				04124D861A7A419200B0795C /* Student.m in Sources */,
 				04133F3B1A7920EE00EA4DE3 /* AppDelegate.m in Sources */,
-				0444A5AB1A7B9592001C4547 /* NSObject+GP.m in Sources */,
 				04133F381A7920EE00EA4DE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
