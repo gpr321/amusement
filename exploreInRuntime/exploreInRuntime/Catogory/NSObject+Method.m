@@ -41,7 +41,7 @@
     return newIMP;
 }
 
-+ (void)swizzleOriginSelectorIMP:(SEL)orignSelector WithSelector:(SEL)curSelector{
++ (void)swizzleOriginSelector:(SEL)orignSelector WithSelector:(SEL)curSelector{
     Method currMethod = class_getInstanceMethod([self class], curSelector);
     Method orginMethod = class_getInstanceMethod([self class], orignSelector);
     IMP currIMP = method_getImplementation(currMethod);

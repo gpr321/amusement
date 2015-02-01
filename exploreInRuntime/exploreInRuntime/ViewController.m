@@ -28,7 +28,7 @@
 
 // 偷换方法
 - (void)test3{
-    [Person swizzleOriginSelectorIMP:@selector(sayHello) WithSelector:@selector(sayHi)];
+    [Person swizzleOriginSelector:@selector(sayHello) WithSelector:@selector(sayHi)];
     Person *p = [[Person alloc] init];
     [p sayHello];
     [p sayHi];

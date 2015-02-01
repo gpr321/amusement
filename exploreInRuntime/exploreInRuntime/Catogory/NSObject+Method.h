@@ -27,7 +27,7 @@
  *  @param orignSelector
  *  @param curSelector
  */
-+ (void)swizzleOriginSelectorIMP:(SEL)orignSelector WithSelector:(SEL)curSelector;
++ (void)swizzleOriginSelector:(SEL)orignSelector WithSelector:(SEL)curSelector;
 
 /**
  *  打印类中的所有方法,包括 implementation 中的方法
