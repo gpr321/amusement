@@ -14,4 +14,6 @@
 
 - (instancetype)documentPath;
 
+- (instancetype)tempFile;
+
 @end

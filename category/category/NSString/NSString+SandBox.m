@@ -20,4 +20,9 @@
     return [path stringByAppendingPathComponent:self];
 }
 
+- (instancetype)tempFile{
+    NSString *path = NSTemporaryDirectory();
+    return [path stringByAppendingPathComponent:self];
+}
+
 @end
