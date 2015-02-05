@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D1DE11A83DB850092EC2E /* UIBarButtonItem+Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D1DE01A83DB850092EC2E /* UIBarButtonItem+Button.m */; };
 		041A5DD51A7F3EFE008B1A41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A5DD41A7F3EFE008B1A41 /* main.m */; };
 		041A5DD81A7F3EFE008B1A41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A5DD71A7F3EFE008B1A41 /* AppDelegate.m */; };
 		041A5DDB1A7F3EFE008B1A41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A5DDA1A7F3EFE008B1A41 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040D1DDF1A83DB850092EC2E /* UIBarButtonItem+Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Button.h"; sourceTree = "<group>"; };
+		040D1DE01A83DB850092EC2E /* UIBarButtonItem+Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Button.m"; sourceTree = "<group>"; };
 		041A5DCF1A7F3EFE008B1A41 /* category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041A5DD31A7F3EFE008B1A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041A5DD41A7F3EFE008B1A41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040D1DDE1A83DB7C0092EC2E /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				040D1DDF1A83DB850092EC2E /* UIBarButtonItem+Button.h */,
+				040D1DE01A83DB850092EC2E /* UIBarButtonItem+Button.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
 		041A5DC61A7F3EFE008B1A41 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 		041A5DD11A7F3EFE008B1A41 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				040D1DDE1A83DB7C0092EC2E /* UIBarButtonItem */,
 				041E6EE41A811C4A00D4580C /* GPDownloader1 */,
 				04F94C831A7FE759001501E6 /* UIImage */,
 				04F94C7F1A7FE6EE001501E6 /* UIApplication */,
@@ -395,6 +408,7 @@
 				04F94C681A7FE3A0001501E6 /* UIView+Animation.m in Sources */,
 				04F94C861A7FE799001501E6 /* UIImage+Extendsion.m in Sources */,
 				04F94C6F1A7FE4D7001501E6 /* NSDateComponents+CurDateAndTime.m in Sources */,
+				040D1DE11A83DB850092EC2E /* UIBarButtonItem+Button.m in Sources */,
 				04F94C7E1A7FE660001501E6 /* NSString+SandBox.m in Sources */,
 				04F94C821A7FE724001501E6 /* UIApplication+Setting.m in Sources */,
 				041E6EEB1A811C4A00D4580C /* GPDownloader.m in Sources */,
