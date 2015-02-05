@@ -62,6 +62,7 @@
 		041E6EE81A811C4A00D4580C /* GPDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDownloadManager.m; sourceTree = "<group>"; };
 		041E6EE91A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+MutableThreadDownload.h"; sourceTree = "<group>"; };
 		041E6EEA1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+MutableThreadDownload.m"; sourceTree = "<group>"; };
+		042604791A8230310067C258 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04F94C4B1A7FBF0A001501E6 /* GPSingleTon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSingleTon.h; sourceTree = "<group>"; };
 		04F94C4C1A7FBFF1001501E6 /* GPInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPInject.h; sourceTree = "<group>"; };
 		04F94C5B1A7FDC79001501E6 /* GPDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDownLoader.h; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 			children = (
 				04F94C4B1A7FBF0A001501E6 /* GPSingleTon.h */,
 				04F94C4C1A7FBFF1001501E6 /* GPInject.h */,
+				042604791A8230310067C258 /* PrefixHeader.pch */,
 			);
 			path = macroFile;
 			sourceTree = "<group>";

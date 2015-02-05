@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  category
+//
+//  Created by mac on 15-2-4.
+//  Copyright (c) 2015年 gpr. All rights reserved.
+//
+
+#ifndef category_PrefixHeader_pch
+#define category_PrefixHeader_pch
+
+#define GPRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define GPARGB(a,r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+// LOG
+#ifdef DEBUG
+#define MTLog(...) NSLog(__VA_ARGS__)
+#else
+#define MTLog(...)
+#endif
+
+#endif
