@@ -24,6 +24,7 @@
 		04EF603C1A86224F00BA965E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04EF60381A86224F00BA965E /* LICENSE */; };
 		04EF603D1A86224F00BA965E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF603A1A86224F00BA965E /* MBProgressHUD.m */; };
 		04EF603E1A86224F00BA965E /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 04EF603B1A86224F00BA965E /* README.mdown */; };
+		04EF604D1A862E3300BA965E /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF604C1A862E3300BA965E /* NSString+Regex.m */; };
 		04F94C5F1A7FDC79001501E6 /* GPDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F94C5C1A7FDC79001501E6 /* GPDownLoader.m */; };
 		04F94C601A7FDC79001501E6 /* GPDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F94C5E1A7FDC79001501E6 /* GPDownLoadManager.m */; };
 		04F94C641A7FDC9C001501E6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F94C631A7FDC9C001501E6 /* NSArray+Log.m */; };
@@ -78,6 +79,8 @@
 		04EF60391A86224F00BA965E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		04EF603A1A86224F00BA965E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		04EF603B1A86224F00BA965E /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		04EF604B1A862E3300BA965E /* NSString+Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regex.h"; sourceTree = "<group>"; };
+		04EF604C1A862E3300BA965E /* NSString+Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regex.m"; sourceTree = "<group>"; };
 		04F94C4B1A7FBF0A001501E6 /* GPSingleTon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSingleTon.h; sourceTree = "<group>"; };
 		04F94C4C1A7FBFF1001501E6 /* GPInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPInject.h; sourceTree = "<group>"; };
 		04F94C5B1A7FDC79001501E6 /* GPDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDownLoader.h; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 			children = (
 				04F94C7C1A7FE660001501E6 /* NSString+SandBox.h */,
 				04F94C7D1A7FE660001501E6 /* NSString+SandBox.m */,
+				04EF604B1A862E3300BA965E /* NSString+Regex.h */,
+				04EF604C1A862E3300BA965E /* NSString+Regex.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				04F94C821A7FE724001501E6 /* UIApplication+Setting.m in Sources */,
 				04EF603D1A86224F00BA965E /* MBProgressHUD.m in Sources */,
 				041E6EEB1A811C4A00D4580C /* GPDownloader.m in Sources */,
+				04EF604D1A862E3300BA965E /* NSString+Regex.m in Sources */,
 				04EF603E1A86224F00BA965E /* README.mdown in Sources */,
 				04F94C641A7FDC9C001501E6 /* NSArray+Log.m in Sources */,
 				041E6EEC1A811C4A00D4580C /* GPDownloadManager.m in Sources */,
