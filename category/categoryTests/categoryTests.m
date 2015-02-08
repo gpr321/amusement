@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "NSString+Regex.h"
 
 @interface categoryTests : XCTestCase
 
@@ -23,6 +24,10 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testMyString{
+    
 }
 
 - (void)testExample {
