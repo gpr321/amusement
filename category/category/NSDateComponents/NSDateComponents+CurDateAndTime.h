@@ -17,5 +17,25 @@
  *
  *  @return 时间组件
  */
-+ (instancetype)curentDateComponnents:(NSCalendarUnit)unitFlags;
++ (instancetype)gp_curentDateComponnents:(NSCalendarUnit)unitFlags;
+
+/**
+ *  根据给定的时间计算出距离现在的时间日期
+ *
+ *  @param date 给定的时间
+ *  @param units 给定时间组件选项
+ *  @return 时间组件
+ */
++ (instancetype)gp_dateComponentsFromNowWithDate:(NSDate *)date componentUnits:(NSCalendarUnit)units;
+
+/**
+ *  根据给定的日期字符串和给定的日期格式计算出距离现在的时间日期
+ *
+ *  @param dateStr       给定的时间字符串
+ *  @param dateFormatter 日期格式
+ *  @param units         给定时间组件选项
+ *
+ *  @return 时间组件
+ */
++ (instancetype)gp_dateComponentsFromNowWithDateString:(NSString *)dateStr formatter:(NSString *)dateFormatter componentUnits:(NSCalendarUnit)units;
 @end

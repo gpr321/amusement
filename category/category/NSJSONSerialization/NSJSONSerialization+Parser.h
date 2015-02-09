@@ -19,5 +19,5 @@
  *  @return 模型数组
  */
 
-+ (NSArray *)modelArrayFromJsonFile:(NSString *)fileName modelClass:(Class)cls;
++ (NSArray *)gp_modelArrayFromJsonFile:(NSString *)fileName modelClass:(Class)cls;
 @end

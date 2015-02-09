@@ -15,12 +15,12 @@
  *
  *  @param layer 要暂停的layer
  */
-+ (void)pauseLayer:(CALayer *)layer;
++ (void)gp_pauseLayer:(CALayer *)layer;
 
 /**
  *  恢复layer当前动画
  *
  *  @param layer 要恢复的layer的当前动画
  */
-+ (void)resumLayer:(CALayer *)layer;
++ (void)gp_resumLayer:(CALayer *)layer;
 @end

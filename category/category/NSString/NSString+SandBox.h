@@ -10,10 +10,10 @@
 
 @interface NSString (SandBox)
 
-- (instancetype)cachesPath;
+- (instancetype)gp_cachesPath;
 
-- (instancetype)documentPath;
+- (instancetype)gp_documentPath;
 
-- (instancetype)tempFile;
+- (instancetype)gp_tempFile;
 
 @end

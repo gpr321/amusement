@@ -10,18 +10,23 @@
 
 @implementation NSDateComponents (CurDateAndTime)
 
-/**
- *  根据用户给定的参数获取当前日期时间组件
-	*
- *  @param unitFlags 用户给定得参数
- *
- *  @return 时间组件
- */
-+ (instancetype)curentDateComponnents:(NSCalendarUnit)unitFlags{
++ (instancetype)gp_curentDateComponnents:(NSCalendarUnit)unitFlags{
     // 获取时间
     NSCalendar *ca = [NSCalendar currentCalendar];
     // 获取时分秒的时间组件
     return [ca components:unitFlags fromDate:[NSDate date]];
+}
+
++ (instancetype)gp_dateComponentsFromNowWithDate:(NSDate *)date componentUnits:(NSCalendarUnit)units{
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    return [calendar components:units fromDate:date toDate:[NSDate date] options:kNilOptions];
+}
+
++ (instancetype)gp_dateComponentsFromNowWithDateString:(NSString *)dateStr formatter:(NSString *)dateFormatter componentUnits:(NSCalendarUnit)units{
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    fmt.dateFormat = dateFormatter;
+    NSDate *date = [fmt dateFromString:dateStr];
+    return [self gp_dateComponentsFromNowWithDate:date componentUnits:units];
 }
 
 @end

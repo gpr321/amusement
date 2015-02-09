@@ -17,7 +17,7 @@
  *
  *  @return 裁剪好的图片
  */
-- (UIImage *)clipImageBy:(CGRect)rect{
+- (UIImage *)gp_clipImageBy:(CGRect)rect{
     return  [UIImage 	imageWithCGImage:CGImageCreateWithImageInRect(self.CGImage, rect)];
 }
 
@@ -28,7 +28,7 @@
  *
  *  @return 原图片
  */
-+ (instancetype)imageFromOriginalName:(NSString *)name{
++ (instancetype)gp_imageFromOriginalName:(NSString *)name{
     UIImage *img = [UIImage imageNamed:name];
     // 使用原模式加载图片
     img = [img 	imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -44,7 +44,7 @@
  *
  *  @return 所要的图片
  */
-+ (instancetype)image:(NSString *)name BoarderWith:(CGFloat)boarderWidth BoardColor:(UIColor *)color{
++ (instancetype)gp_image:(NSString *)name BoarderWith:(CGFloat)boarderWidth BoardColor:(UIColor *)gp_color{
     UIImage *image = [UIImage imageNamed:name];
     CGRect loopRect = CGRectMake(0, 0, image.size.width + 2 * boarderWidth, image.size.height + 2 * boarderWidth);
     CGRect imgRect = CGRectMake(boarderWidth, boarderWidth, image.size.width , image.size.height);
@@ -73,7 +73,7 @@
  *
  *  @return 生成的图片
  */
-+ (instancetype)imageWithView:(UIView *)view{
++ (instancetype)gp_imageWithView:(UIView *)view{
     // 创建图片上下文
     UIGraphicsBeginImageContext(view.bounds.size);
     // 获取创建的上下文
@@ -94,7 +94,7 @@
  *
  *  @return 生成的图片
  */
-+ (instancetype)imageWithView:(UIView *)view Opaque:(BOOL)opaque{
++ (instancetype)gp_imageWithView:(UIView *)view Opaque:(BOOL)opaque{
     // 创建图片上下文
     //    UIGraphicsBeginImageContext(view.bounds.size);
     UIGraphicsBeginImageContextWithOptions(view.bounds.size,opaque, 0);
@@ -117,7 +117,7 @@
  *
  *  @return 处理好的图片
  */
-- (instancetype)waterMarkWith:(UIImage *)img inFrameOfCurImage:(CGRect)frame{
+- (instancetype)gp_waterMarkWith:(UIImage *)img inFrameOfCurImage:(CGRect)frame{
     // 开启上下文
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
     // 把当前图片渲染到上下文中
@@ -140,13 +140,13 @@
  *
  *  @return 处理好的图片
  */
-- (instancetype)waterMarkWith:(UIImage *)img{
+- (instancetype)gp_waterMarkWith:(UIImage *)img{
     CGFloat w = img.size.width;
     CGFloat h = img.size.height;
     CGFloat x = self.size.width - w;
     CGFloat y = self.size.height - h;
     CGRect fame = CGRectMake(x, y, w, h);
-    UIImage *result = [self waterMarkWith:img inFrameOfCurImage:fame];
+    UIImage *result = [self gp_waterMarkWith:img inFrameOfCurImage:fame];
     return result;
     
 }
@@ -160,7 +160,7 @@
  *
  *  @return 处理后的图片
  */
-- (instancetype)waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo{
+- (instancetype)gp_waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo{
     // 开启上下文
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
     // 把当前图片渲染到上下文
@@ -177,7 +177,7 @@
 }
 
 /**
- *  画一个文字水印在当前图片上(默认会显示在右下角),此方法必须于- (instancetype)waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo 一起拷贝
+ *  画一个文字水印在当前图片上(默认会显示在右下角),此方法必须于- (instancetype)gp_waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo 一起拷贝
  *
  *
  *  @param str      图片上的文字
@@ -185,7 +185,7 @@
  *
  *  @return 处理后的图片
  */
-- (instancetype)waterMarkWith:(NSString *)str withAttributes:(NSDictionary *)attrInfo{
+- (instancetype)gp_waterMarkWith:(NSString *)str withAttributes:(NSDictionary *)attrInfo{
     CGFloat maxW = self.size.width * 0.5;
     CGFloat maxH = self.size.height * 0.5;
     CGRect frame = [str boundingRectWithSize:CGSizeMake(maxW, maxH) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrInfo context:nil];
@@ -193,7 +193,7 @@
     CGFloat strY = self.size.height - frame.size.height;
     frame.origin.x = strX;
     frame.origin.y = strY;
-    return [self waterMarkWith:str InRect:frame withAttributes:attrInfo];
+    return [self gp_waterMarkWith:str InRect:frame withAttributes:attrInfo];
 }
 
 @end

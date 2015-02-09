@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "NSString+Regex.h"
+#import "NSString+Compare.h"
 
 @interface categoryTests : XCTestCase
 
@@ -26,9 +27,6 @@
     [super tearDown];
 }
 
-- (void)testMyString{
-    
-}
 
 - (void)testExample {
     // This is an example of a functional test case.

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSString+Compare.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSString *dateStr = @"2015-02-08";
+    NSString *formatter = @"yyyy-MM-dd";
+    NSComparisonResult result = [dateStr gp_compareWithDate:[NSDate date] dateFormatter:formatter];
+    
+    if ( result == NSOrderedAscending ) {
+        NSLog(@"小于");
+    } else if ( result == NSOrderedDescending){
+        NSLog(@"大于");
+    } else if (result == NSOrderedSame) {
+        NSLog(@"等于");
+    }
 }
 
 - (void)didReceiveMemoryWarning {

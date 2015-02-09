@@ -17,7 +17,7 @@
  *
  *  @return YES : 合法 ,否则 不合法
  */
-- (BOOL)matchWithRegex:(NSString *)regex;
+- (BOOL)gp_matchWithRegex:(NSString *)regex;
 
 /**
  *  从一段字符串中根据正则表达式匹配出符合条件的字符串
@@ -26,7 +26,7 @@
  *
  *  @return 符合条件的字符串数组
  */
-- (NSArray *)subStringByRegular:(NSString *)regular;
+- (NSArray *)gp_subStringByRegular:(NSString *)regular;
 
 /**
  *  用指定的正则表达式来遍历搜寻本字符串,每找到符合条件的会调用一次block
@@ -34,5 +34,5 @@
  *  @param regular 正则表达式
  *  @param block   每找到符合条件的会调用一次block
  */
-- (void)findStringByRegular:(NSString *)regular usingBlock:(void(^)(NSString *item,NSRange range,BOOL *stop))block;
+- (void)gp_findStringByRegular:(NSString *)regular usingBlock:(void(^)(NSString *item,NSRange range,BOOL *stop))block;
 @end

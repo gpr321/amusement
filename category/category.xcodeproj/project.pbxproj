@@ -19,6 +19,7 @@
 		041E6EEB1A811C4A00D4580C /* GPDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6EE61A811C4A00D4580C /* GPDownloader.m */; };
 		041E6EEC1A811C4A00D4580C /* GPDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6EE81A811C4A00D4580C /* GPDownloadManager.m */; };
 		041E6EED1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6EEA1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m */; };
+		0467D0861A886ED900EB61B0 /* NSString+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467D0851A886ED900EB61B0 /* NSString+Compare.m */; };
 		04EF60331A8621DD00BA965E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04EF60321A8621DD00BA965E /* MBProgressHUD.bundle */; };
 		04EF60361A86220700BA965E /* MBProgressHUD+GP.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60351A86220700BA965E /* MBProgressHUD+GP.m */; };
 		04EF603C1A86224F00BA965E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04EF60381A86224F00BA965E /* LICENSE */; };
@@ -72,6 +73,8 @@
 		041E6EE91A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+MutableThreadDownload.h"; sourceTree = "<group>"; };
 		041E6EEA1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+MutableThreadDownload.m"; sourceTree = "<group>"; };
 		042604791A8230310067C258 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0467D0841A886ED900EB61B0 /* NSString+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Compare.h"; sourceTree = "<group>"; };
+		0467D0851A886ED900EB61B0 /* NSString+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Compare.m"; sourceTree = "<group>"; };
 		04EF60321A8621DD00BA965E /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		04EF60341A86220700BA965E /* MBProgressHUD+GP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GP.h"; sourceTree = "<group>"; };
 		04EF60351A86220700BA965E /* MBProgressHUD+GP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GP.m"; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 				04F94C7D1A7FE660001501E6 /* NSString+SandBox.m */,
 				04EF604B1A862E3300BA965E /* NSString+Regex.h */,
 				04EF604C1A862E3300BA965E /* NSString+Regex.m */,
+				0467D0841A886ED900EB61B0 /* NSString+Compare.h */,
+				0467D0851A886ED900EB61B0 /* NSString+Compare.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				04EF603D1A86224F00BA965E /* MBProgressHUD.m in Sources */,
 				041E6EEB1A811C4A00D4580C /* GPDownloader.m in Sources */,
 				04EF604D1A862E3300BA965E /* NSString+Regex.m in Sources */,
+				0467D0861A886ED900EB61B0 /* NSString+Compare.m in Sources */,
 				04EF603E1A86224F00BA965E /* README.mdown in Sources */,
 				04F94C641A7FDC9C001501E6 /* NSArray+Log.m in Sources */,
 				041E6EEC1A811C4A00D4580C /* GPDownloadManager.m in Sources */,

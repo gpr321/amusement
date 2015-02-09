@@ -10,7 +10,7 @@
 
 @implementation UIBarButtonItem (Button)
 
-+ (instancetype)barButtonItemWithImage:(NSString *)imageName hightLightImage:(NSString *)hightLightImageName target:(id)target action:(SEL)selector{
++ (instancetype)gp_barButtonItemWithImage:(NSString *)imageName hightLightImage:(NSString *)hightLightImageName target:(id)target action:(SEL)selector{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:hightLightImageName] forState:UIControlStateHighlighted];

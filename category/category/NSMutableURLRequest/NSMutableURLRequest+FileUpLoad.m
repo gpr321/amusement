@@ -11,7 +11,7 @@
 @implementation NSMutableURLRequest (FileUpLoad)
 
 static NSString *boundaryName = @"boundaryName";
-+ (instancetype)requestWithURL:(NSURL *)URL fileName:(NSString *)fileName{
++ (instancetype)gp_requestWithURL:(NSURL *)URL fileName:(NSString *)fileName{
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     request.HTTPMethod = @"POST";
     

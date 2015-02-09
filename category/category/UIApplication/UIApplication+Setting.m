@@ -16,7 +16,7 @@
  *
  *  @param bangeNumber badgeNumber的值
  */
-+ (void)setAppBadgeNumber:(NSInteger)bangeNumber{
++ (void)gp_setAppBadgeNumber:(NSInteger)bangeNumber{
     UIApplication *app = [UIApplication sharedApplication];
 #ifdef __IPHONE_8_0
     // 获取系统版本号

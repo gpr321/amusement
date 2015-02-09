@@ -16,6 +16,6 @@
  *
  *  @param bangeNumber badgeNumber的值
  */
-+ (void)setAppBadgeNumber:(NSInteger)bangeNumber;
++ (void)gp_setAppBadgeNumber:(NSInteger)bangeNumber;
 
 @end

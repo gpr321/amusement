@@ -10,12 +10,12 @@
 
 @implementation NSString (Regex)
 
-- (BOOL)matchWithRegex:(NSString *)regex{
+- (BOOL)gp_matchWithRegex:(NSString *)regex{
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES%@",regex];
     return [predicate evaluateWithObject:self];
 }
 
-- (NSArray *)subStringByRegular:(NSString *)regular{
+- (NSArray *)gp_subStringByRegular:(NSString *)regular{
     NSRange r = [self rangeOfString:regular options:NSRegularExpressionSearch];
     if ( r.location == NSNotFound || r.length == 0 ) return nil;
     NSMutableArray *subStrings = [NSMutableArray array];
@@ -28,7 +28,7 @@
     return subStrings;
 }
 
-- (void)findStringByRegular:(NSString *)regular usingBlock:(void(^)(NSString *item,NSRange range,BOOL *stop))block{
+- (void)gp_findStringByRegular:(NSString *)regular usingBlock:(void(^)(NSString *item,NSRange range,BOOL *stop))block{
     NSRange r = [self rangeOfString:regular options:NSRegularExpressionSearch];
     NSString *item = nil;
     BOOL stop = NO;

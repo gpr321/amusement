@@ -10,17 +10,17 @@
 
 @implementation NSString (SandBox)
 
-- (instancetype)cachesPath{
+- (instancetype)gp_cachesPath{
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     return [path stringByAppendingPathComponent:self];
 }
 
-- (instancetype)documentPath{
+- (instancetype)gp_documentPath{
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     return [path stringByAppendingPathComponent:self];
 }
 
-- (instancetype)tempFile{
+- (instancetype)gp_tempFile{
     NSString *path = NSTemporaryDirectory();
     return [path stringByAppendingPathComponent:self];
 }

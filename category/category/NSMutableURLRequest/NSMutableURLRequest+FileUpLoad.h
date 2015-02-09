@@ -19,7 +19,7 @@
  *
  *  @return request
  */
-+ (instancetype)requestWithURL:(NSURL *)URL fileName:(NSString *)fileName;
++ (instancetype)gp_requestWithURL:(NSURL *)URL fileName:(NSString *)fileName;
 
 
 @end

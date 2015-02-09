@@ -15,7 +15,7 @@
  *
  *  @param layer 要暂停的layer
  */
-+ (void)pauseLayer:(CALayer *)layer{
++ (void)gp_pauseLayer:(CALayer *)layer{
     // 获取当前播放时间
     CFTimeInterval pauseTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
     // 设置当前layer时间轴的速度为0
@@ -30,7 +30,7 @@
  *
  *  @param layer 要恢复的layer的当前动画
  */
-+ (void)resumLayer:(CALayer *)layer{
++ (void)gp_resumLayer:(CALayer *)layer{
     // 获取上次相对于父时间轴的停止时间
     CFTimeInterval offset = layer.timeOffset;
     // 恢复速度

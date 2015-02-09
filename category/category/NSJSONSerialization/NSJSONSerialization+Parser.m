@@ -20,7 +20,7 @@
  *  @return 模型数组
  */
 
-+ (NSArray *)modelArrayFromJsonFile:(NSString *)fileName modelClass:(Class)cls{
++ (NSArray *)gp_modelArrayFromJsonFile:(NSString *)fileName modelClass:(Class)cls{
     NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
     NSData *data = [NSData dataWithContentsOfFile:path];
     NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];

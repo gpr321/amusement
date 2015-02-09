@@ -18,6 +18,6 @@
  *  @param target              监听事件的对象
  *  @param selector            响应事件的方法
  */
-+ (instancetype)barButtonItemWithImage:(NSString *)imageName hightLightImage:(NSString *)hightLightImageName target:(id)target action:(SEL)selector;
++ (instancetype)gp_barButtonItemWithImage:(NSString *)imageName hightLightImage:(NSString *)hightLightImageName target:(id)target action:(SEL)selector;
 
 @end

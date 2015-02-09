@@ -17,7 +17,7 @@
  *
  *  @return 裁剪好的图片
  */
-- (UIImage *)clipImageBy:(CGRect)rect;
+- (UIImage *)gp_clipImageBy:(CGRect)rect;
 
 /**
  *  加载一张不被渲染的图片
@@ -26,7 +26,7 @@
  *
  *  @return 原图片
  */
-+ (instancetype)imageFromOriginalName:(NSString *)name;
++ (instancetype)gp_imageFromOriginalName:(NSString *)name;
 
 /**
  *  创建一个圆环图片
@@ -37,7 +37,7 @@
  *
  *  @return 所要的图片
  */
-+ (instancetype)image:(NSString *)name BoarderWith:(CGFloat)boarderWidth BoardColor:(UIColor *)color;
++ (instancetype)gp_image:(NSString *)name BoarderWith:(CGFloat)boarderWidth BoardColor:(UIColor *)gp_color;
 
 /**
  *  把一个view显示的内容生成图片
@@ -46,7 +46,7 @@
  *
  *  @return 生成的图片
  */
-+ (instancetype)imageWithView:(UIView *)view;
++ (instancetype)gp_imageWithView:(UIView *)view;
 
 /**
  *  把一个view显示的内容生成图片
@@ -55,7 +55,7 @@
  *
  *  @return 生成的图片
  */
-+ (instancetype)imageWithView:(UIView *)view Opaque:(BOOL)opaque;
++ (instancetype)gp_imageWithView:(UIView *)view Opaque:(BOOL)opaque;
 
 /**
  *  画一个图片水印到当前图片上
@@ -65,7 +65,7 @@
  *
  *  @return 处理好的图片
  */
-- (instancetype)waterMarkWith:(UIImage *)img inFrameOfCurImage:(CGRect)frame;
+- (instancetype)gp_waterMarkWith:(UIImage *)gp_img inFrameOfCurImage:(CGRect)frame;
 
 /**
  *  画一个图片水印到当前图片上,默认会显示在图片的右下角
@@ -74,7 +74,7 @@
  *
  *  @return 处理好的图片
  */
-- (instancetype)waterMarkWith:(UIImage *)img;
+- (instancetype)gp_waterMarkWith:(UIImage *)gp_img;
 
 /**
  *  画一个文字水印在当前图片上
@@ -85,10 +85,10 @@
  *
  *  @return 处理后的图片
  */
-- (instancetype)waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo;
+- (instancetype)gp_waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo;
 
 /**
- *  画一个文字水印在当前图片上(默认会显示在右下角),此方法必须于- (instancetype)waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo 一起拷贝
+ *  画一个文字水印在当前图片上(默认会显示在右下角),此方法必须于- (instancetype)gp_waterMarkWith:(NSString *)str InRect:(CGRect)frame withAttributes:(NSDictionary *)attrInfo 一起拷贝
  *
  *
  *  @param str      图片上的文字
@@ -96,6 +96,6 @@
  *
  *  @return 处理后的图片
  */
-- (instancetype)waterMarkWith:(NSString *)str withAttributes:(NSDictionary *)attrInfo;
+- (instancetype)gp_waterMarkWith:(NSString *)str withAttributes:(NSDictionary *)attrInfo;
 
 @end

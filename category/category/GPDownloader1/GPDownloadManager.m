@@ -115,7 +115,7 @@
 
 #pragma mark - 文件处理
 - (void)mergeFileItems{
-    NSString *targetName = [self.fileName tempFile];
+    NSString *targetName = [self.fileName gp_tempFile];
     NSOutputStream *outPutStream = [[NSOutputStream alloc] initToFileAtPath:targetName append:YES];
     [outPutStream open];
     // 顺序融合

@@ -67,7 +67,7 @@ static NSTimeInterval const kTimeOut = 5;
 - (void)setFileName:(NSString *)fileName{
     _fileName = [fileName copy];
     NSString *temName = [NSString stringWithFormat:@"%@_%tu_%tu",_fileName,self.downloadRange.location,self.downloadRange.length];
-    _tempFilePath = [temName tempFile];
+    _tempFilePath = [temName gp_tempFile];
     // NSLog(@"%@",self.tempFilePath);
 }
 
