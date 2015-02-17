@@ -13,11 +13,27 @@
 
 #define GPARGB(a,r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
+#define GPFileSizeFromPath(filePath) [[[NSFileManager defaultManager] attributesOfItemAtPath:(filePath) error:NULL] fileSize]
+
 // LOG
 #ifdef DEBUG
 #define MTLog(...) NSLog(__VA_ARGS__)
 #else
 #define MTLog(...)
 #endif
+
+#define dispatch_main_sync_safe(block)\
+if ([NSThread isMainThread]) {\
+    block();\
+} else {\
+    dispatch_sync(dispatch_get_main_queue(), block);\
+}
+
+#define dispatch_main_async_safe(block)\
+if ([NSThread isMainThread]) {\
+    block();\
+} else {\
+    dispatch_async(dispatch_get_main_queue(), block);\
+}
 
 #endif
