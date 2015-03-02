@@ -19,6 +19,8 @@
 		041E6EEB1A811C4A00D4580C /* GPDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6EE61A811C4A00D4580C /* GPDownloader.m */; };
 		041E6EEC1A811C4A00D4580C /* GPDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6EE81A811C4A00D4580C /* GPDownloadManager.m */; };
 		041E6EED1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6EEA1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m */; };
+		0434C95B1AA4872900891521 /* Reachability in Resources */ = {isa = PBXBuildFile; fileRef = 0434C95A1AA4872900891521 /* Reachability */; };
+		0434C95D1AA4873200891521 /* SSKeychain in Resources */ = {isa = PBXBuildFile; fileRef = 0434C95C1AA4873200891521 /* SSKeychain */; };
 		0467D0861A886ED900EB61B0 /* NSString+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467D0851A886ED900EB61B0 /* NSString+Compare.m */; };
 		04B24A3B1A9351B400357946 /* GPDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B24A321A9351B400357946 /* GPDownloader.m */; };
 		04B24A3C1A9351B400357946 /* GPDownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B24A341A9351B400357946 /* GPDownloaderManager.m */; };
@@ -77,6 +79,8 @@
 		041E6EE91A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+MutableThreadDownload.h"; sourceTree = "<group>"; };
 		041E6EEA1A811C4A00D4580C /* NSMutableURLRequest+MutableThreadDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+MutableThreadDownload.m"; sourceTree = "<group>"; };
 		042604791A8230310067C258 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0434C95A1AA4872900891521 /* Reachability */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Reachability; sourceTree = "<group>"; };
+		0434C95C1AA4873200891521 /* SSKeychain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SSKeychain; sourceTree = "<group>"; };
 		0467D0841A886ED900EB61B0 /* NSString+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Compare.h"; sourceTree = "<group>"; };
 		0467D0851A886ED900EB61B0 /* NSString+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Compare.m"; sourceTree = "<group>"; };
 		04B24A311A9351B400357946 /* GPDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDownloader.h; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		041A5DD11A7F3EFE008B1A41 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				0434C95C1AA4873200891521 /* SSKeychain */,
+				0434C95A1AA4872900891521 /* Reachability */,
 				04B24A301A9351A900357946 /* GPDownloader最终版本 */,
 				04EF60311A8621CA00BA965E /* MBProgressHUD+GP */,
 				040D1DDE1A83DB7C0092EC2E /* UIBarButtonItem */,
@@ -458,8 +464,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				041A5DDE1A7F3EFE008B1A41 /* Main.storyboard in Resources */,
+				0434C95B1AA4872900891521 /* Reachability in Resources */,
 				04EF60331A8621DD00BA965E /* MBProgressHUD.bundle in Resources */,
 				041A5DE31A7F3EFE008B1A41 /* LaunchScreen.xib in Resources */,
+				0434C95D1AA4873200891521 /* SSKeychain in Resources */,
 				041A5DE01A7F3EFE008B1A41 /* Images.xcassets in Resources */,
 				04EF603C1A86224F00BA965E /* LICENSE in Resources */,
 			);
