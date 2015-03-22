@@ -70,6 +70,14 @@
 		04D1E1981AA8733700117820 /* GPInject.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1E1811AA8733700117820 /* GPInject.h */; };
 		04D1E1991AA8733700117820 /* GPSingleTon.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1E1821AA8733700117820 /* GPSingleTon.h */; };
 		04D1E19A1AA8733700117820 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 04D1E1831AA8733700117820 /* PrefixHeader.pch */; };
+		04F4F4E71ABE98AF00081470 /* CircleRoundLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F4F4DC1ABE98AF00081470 /* CircleRoundLayout.h */; };
+		04F4F4E81ABE98AF00081470 /* CircleRoundLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4DD1ABE98AF00081470 /* CircleRoundLayout.m */; };
+		04F4F4E91ABE98AF00081470 /* ScaleWaterFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F4F4DF1ABE98AF00081470 /* ScaleWaterFlowLayout.h */; };
+		04F4F4EA1ABE98AF00081470 /* ScaleWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E01ABE98AF00081470 /* ScaleWaterFlowLayout.m */; };
+		04F4F4EB1ABE98AF00081470 /* StackLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F4F4E21ABE98AF00081470 /* StackLayout.h */; };
+		04F4F4EC1ABE98AF00081470 /* StackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E31ABE98AF00081470 /* StackLayout.m */; };
+		04F4F4ED1ABE98AF00081470 /* WaterFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */; };
+		04F4F4EE1ABE98AF00081470 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +157,14 @@
 		04D1E1811AA8733700117820 /* GPInject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInject.h; sourceTree = "<group>"; };
 		04D1E1821AA8733700117820 /* GPSingleTon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSingleTon.h; sourceTree = "<group>"; };
 		04D1E1831AA8733700117820 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04F4F4DC1ABE98AF00081470 /* CircleRoundLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleRoundLayout.h; sourceTree = "<group>"; };
+		04F4F4DD1ABE98AF00081470 /* CircleRoundLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleRoundLayout.m; sourceTree = "<group>"; };
+		04F4F4DF1ABE98AF00081470 /* ScaleWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleWaterFlowLayout.h; sourceTree = "<group>"; };
+		04F4F4E01ABE98AF00081470 /* ScaleWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleWaterFlowLayout.m; sourceTree = "<group>"; };
+		04F4F4E21ABE98AF00081470 /* StackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLayout.h; sourceTree = "<group>"; };
+		04F4F4E31ABE98AF00081470 /* StackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLayout.m; sourceTree = "<group>"; };
+		04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +242,7 @@
 		04D1E10F1AA872F100117820 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				04F4F4DA1ABE986D00081470 /* 瀑布流算法 */,
 				04D1E1681AA8733700117820 /* CALayer */,
 				04D1E16B1AA8733700117820 /* GPDownloader1 */,
 				04D1E1721AA8733700117820 /* GPDownloader最终版本 */,
@@ -434,6 +451,53 @@
 			path = macroFile;
 			sourceTree = "<group>";
 		};
+		04F4F4DA1ABE986D00081470 /* 瀑布流算法 */ = {
+			isa = PBXGroup;
+			children = (
+				04F4F4DB1ABE98AF00081470 /* Circle */,
+				04F4F4DE1ABE98AF00081470 /* ScaleWaterFlowLayout */,
+				04F4F4E11ABE98AF00081470 /* StackLayout */,
+				04F4F4E41ABE98AF00081470 /* WaterFlow */,
+			);
+			path = "瀑布流算法";
+			sourceTree = "<group>";
+		};
+		04F4F4DB1ABE98AF00081470 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				04F4F4DC1ABE98AF00081470 /* CircleRoundLayout.h */,
+				04F4F4DD1ABE98AF00081470 /* CircleRoundLayout.m */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		04F4F4DE1ABE98AF00081470 /* ScaleWaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				04F4F4DF1ABE98AF00081470 /* ScaleWaterFlowLayout.h */,
+				04F4F4E01ABE98AF00081470 /* ScaleWaterFlowLayout.m */,
+			);
+			path = ScaleWaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		04F4F4E11ABE98AF00081470 /* StackLayout */ = {
+			isa = PBXGroup;
+			children = (
+				04F4F4E21ABE98AF00081470 /* StackLayout.h */,
+				04F4F4E31ABE98AF00081470 /* StackLayout.m */,
+			);
+			path = StackLayout;
+			sourceTree = "<group>";
+		};
+		04F4F4E41ABE98AF00081470 /* WaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */,
+				04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */,
+			);
+			path = WaterFlow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -453,7 +517,10 @@
 				04D1E1861AA8733700117820 /* GPDownloader.h in Headers */,
 				04D1E1991AA8733700117820 /* GPSingleTon.h in Headers */,
 				04D1E15E1AA8732000117820 /* SSKeychainQuery.h in Headers */,
+				04F4F4ED1ABE98AF00081470 /* WaterFlowLayout.h in Headers */,
 				04D1E15C1AA8732000117820 /* SSKeychain.h in Headers */,
+				04F4F4EB1ABE98AF00081470 /* StackLayout.h in Headers */,
+				04F4F4E91ABE98AF00081470 /* ScaleWaterFlowLayout.h in Headers */,
 				04D1E1641AA8732000117820 /* UIImage+Extendsion.h in Headers */,
 				04D1E19A1AA8733700117820 /* PrefixHeader.pch in Headers */,
 				04D1E1901AA8733700117820 /* GPDownloadFileHelper.h in Headers */,
@@ -464,6 +531,7 @@
 				04D1E1581AA8732000117820 /* Reachability.h in Headers */,
 				04D1E1661AA8732000117820 /* UIView+Frame.h in Headers */,
 				04D1E1881AA8733700117820 /* GPDownloadManager.h in Headers */,
+				04F4F4E71ABE98AF00081470 /* CircleRoundLayout.h in Headers */,
 				04D1E18A1AA8733700117820 /* NSMutableURLRequest+MutableThreadDownload.h in Headers */,
 				04D1E1561AA8732000117820 /* NSString+SandBox.h in Headers */,
 				04D1E18E1AA8733700117820 /* GPDownloaderManager.h in Headers */,
@@ -578,9 +646,11 @@
 				04D1E1571AA8732000117820 /* NSString+SandBox.m in Sources */,
 				04D1E14B1AA8732000117820 /* NSArray+Log.m in Sources */,
 				04D1E1931AA8733700117820 /* GPDownloadInfo.m in Sources */,
+				04F4F4EE1ABE98AF00081470 /* WaterFlowLayout.m in Sources */,
 				04D1E18D1AA8733700117820 /* GPDownloader.m in Sources */,
 				04D1E1611AA8732000117820 /* UIApplication+Setting.m in Sources */,
 				04D1E1591AA8732000117820 /* Reachability.m in Sources */,
+				04F4F4EA1ABE98AF00081470 /* ScaleWaterFlowLayout.m in Sources */,
 				04D1E14F1AA8732000117820 /* NSJSONSerialization+Parser.m in Sources */,
 				04D1E18B1AA8733700117820 /* NSMutableURLRequest+MutableThreadDownload.m in Sources */,
 				04D1E1891AA8733700117820 /* GPDownloadManager.m in Sources */,
@@ -589,6 +659,7 @@
 				04D1E15D1AA8732000117820 /* SSKeychain.m in Sources */,
 				04D1E15A1AA8732000117820 /* Reachability简单使用示例.m in Sources */,
 				04D1E1631AA8732000117820 /* UIBarButtonItem+Button.m in Sources */,
+				04F4F4EC1ABE98AF00081470 /* StackLayout.m in Sources */,
 				04D1E1451AA8732000117820 /* MBProgressHUD.m in Sources */,
 				04D1E1871AA8733700117820 /* GPDownloader.m in Sources */,
 				04D1E1951AA8733700117820 /* GPDownLoader.m in Sources */,
@@ -598,6 +669,7 @@
 				04D1E1671AA8732000117820 /* UIView+Frame.m in Sources */,
 				04D1E1651AA8732000117820 /* UIImage+Extendsion.m in Sources */,
 				04D1E15F1AA8732000117820 /* SSKeychainQuery.m in Sources */,
+				04F4F4E81ABE98AF00081470 /* CircleRoundLayout.m in Sources */,
 				04D1E1511AA8732000117820 /* NSMutableURLRequest+FileUpLoad.m in Sources */,
 				04D1E1551AA8732000117820 /* NSString+Regex.m in Sources */,
 				04D1E1531AA8732000117820 /* NSString+Compare.m in Sources */,
@@ -801,6 +873,7 @@
 				04D1E10B1AA872EB00117820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D1E10C1AA872EB00117820 /* Build configuration list for PBXNativeTarget "categoryTests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +882,7 @@
 				04D1E10E1AA872EB00117820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

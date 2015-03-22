@@ -120,7 +120,7 @@ if ([NSThread isMainThread]) {\
             downloader.downloaderInfo.tempFileNum = i;
             dictM[downloader.downloaderInfo.tempFilePath] = downloader;
         }
-        self.downloaders = [dictM copy];
+        self.downloaders = dictM;
     }
 }
 
