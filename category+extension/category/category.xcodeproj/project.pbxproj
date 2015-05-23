@@ -78,6 +78,8 @@
 		04F4F4EC1ABE98AF00081470 /* StackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E31ABE98AF00081470 /* StackLayout.m */; };
 		04F4F4ED1ABE98AF00081470 /* WaterFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */; };
 		04F4F4EE1ABE98AF00081470 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */; };
+		188DFED61B10378E00CC41D4 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DFED41B10378E00CC41D4 /* NSString+URLEncoding.m */; };
+		188DFED71B10378E00CC41D4 /* UIColor+UIColorExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 188DFED51B10378E00CC41D4 /* UIColor+UIColorExt.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,8 @@
 		04F4F4E31ABE98AF00081470 /* StackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLayout.m; sourceTree = "<group>"; };
 		04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
 		04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
+		188DFED41B10378E00CC41D4 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		188DFED51B10378E00CC41D4 /* UIColor+UIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColorExt.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,7 @@
 		04D1E10F1AA872F100117820 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				188DFED31B10377900CC41D4 /* UIColor */,
 				04F4F4DA1ABE986D00081470 /* 瀑布流算法 */,
 				04D1E1681AA8733700117820 /* CALayer */,
 				04D1E16B1AA8733700117820 /* GPDownloader1 */,
@@ -498,6 +503,15 @@
 			path = WaterFlow;
 			sourceTree = "<group>";
 		};
+		188DFED31B10377900CC41D4 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				188DFED41B10378E00CC41D4 /* NSString+URLEncoding.m */,
+				188DFED51B10378E00CC41D4 /* UIColor+UIColorExt.h */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -510,6 +524,7 @@
 				04D1E18C1AA8733700117820 /* GPDownloader.h in Headers */,
 				04D1E1841AA8733700117820 /* UIView+Animation.h in Headers */,
 				04D1E1941AA8733700117820 /* GPDownLoader.h in Headers */,
+				188DFED71B10378E00CC41D4 /* UIColor+UIColorExt.h in Headers */,
 				04D1E1521AA8732000117820 /* NSString+Compare.h in Headers */,
 				04D1E1621AA8732000117820 /* UIBarButtonItem+Button.h in Headers */,
 				04D1E1541AA8732000117820 /* NSString+Regex.h in Headers */,
@@ -641,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188DFED61B10378E00CC41D4 /* NSString+URLEncoding.m in Sources */,
 				04D1E1481AA8732000117820 /* MBProgressHUD+GP.m in Sources */,
 				04D1E18F1AA8733700117820 /* GPDownloaderManager.m in Sources */,
 				04D1E1571AA8732000117820 /* NSString+SandBox.m in Sources */,

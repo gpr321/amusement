@@ -20,6 +20,8 @@
     [NetworkStatusMonitor StartWithBlock:^(NSInteger NetworkStatus) {
         NSLog(@"%ld",NetworkStatus);
     }];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
     return YES;
 }
 
