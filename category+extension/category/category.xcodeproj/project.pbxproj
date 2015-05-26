@@ -78,6 +78,13 @@
 		04F4F4EC1ABE98AF00081470 /* StackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E31ABE98AF00081470 /* StackLayout.m */; };
 		04F4F4ED1ABE98AF00081470 /* WaterFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */; };
 		04F4F4EE1ABE98AF00081470 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */; };
+		18567F901B14133D00B57331 /* in_pcb.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F891B14133D00B57331 /* in_pcb.h */; };
+		18567F911B14133D00B57331 /* socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F8A1B14133D00B57331 /* socket.h */; };
+		18567F921B14133D00B57331 /* socketvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F8B1B14133D00B57331 /* socketvar.h */; };
+		18567F931B14133D00B57331 /* sysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F8C1B14133D00B57331 /* sysctl.h */; };
+		18567F941B14133D00B57331 /* tcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F8D1B14133D00B57331 /* tcp.h */; };
+		18567F951B14133D00B57331 /* tcp_timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F8E1B14133D00B57331 /* tcp_timer.h */; };
+		18567F961B14133D00B57331 /* tcp_var.h in Headers */ = {isa = PBXBuildFile; fileRef = 18567F8F1B14133D00B57331 /* tcp_var.h */; };
 		188DFEE01B10383D00CC41D4 /* UIColor+UIColorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DFEDE1B10383D00CC41D4 /* UIColor+UIColorExt.m */; };
 		188DFEE11B10383D00CC41D4 /* UIColor+UIColorExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 188DFEDF1B10383D00CC41D4 /* UIColor+UIColorExt.h */; };
 		18977E4A1B1311D2004D9B48 /* AVEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18977E491B1311D2004D9B48 /* AVEncoder.m */; };
@@ -168,6 +175,13 @@
 		04F4F4E31ABE98AF00081470 /* StackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLayout.m; sourceTree = "<group>"; };
 		04F4F4E51ABE98AF00081470 /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
 		04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
+		18567F891B14133D00B57331 /* in_pcb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = in_pcb.h; sourceTree = "<group>"; };
+		18567F8A1B14133D00B57331 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		18567F8B1B14133D00B57331 /* socketvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socketvar.h; sourceTree = "<group>"; };
+		18567F8C1B14133D00B57331 /* sysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysctl.h; sourceTree = "<group>"; };
+		18567F8D1B14133D00B57331 /* tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp.h; sourceTree = "<group>"; };
+		18567F8E1B14133D00B57331 /* tcp_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_timer.h; sourceTree = "<group>"; };
+		18567F8F1B14133D00B57331 /* tcp_var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_var.h; sourceTree = "<group>"; };
 		188DFEDE1B10383D00CC41D4 /* UIColor+UIColorExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColorExt.m"; sourceTree = "<group>"; };
 		188DFEDF1B10383D00CC41D4 /* UIColor+UIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColorExt.h"; sourceTree = "<group>"; };
 		18977E491B1311D2004D9B48 /* AVEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVEncoder.m; sourceTree = "<group>"; };
@@ -248,6 +262,7 @@
 		04D1E10F1AA872F100117820 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				18567F881B14133D00B57331 /* TCPUtils */,
 				18977E481B1311AB004D9B48 /* Data */,
 				188DFED31B10377900CC41D4 /* UIColor */,
 				04F4F4DA1ABE986D00081470 /* 瀑布流算法 */,
@@ -506,6 +521,20 @@
 			path = WaterFlow;
 			sourceTree = "<group>";
 		};
+		18567F881B14133D00B57331 /* TCPUtils */ = {
+			isa = PBXGroup;
+			children = (
+				18567F891B14133D00B57331 /* in_pcb.h */,
+				18567F8A1B14133D00B57331 /* socket.h */,
+				18567F8B1B14133D00B57331 /* socketvar.h */,
+				18567F8C1B14133D00B57331 /* sysctl.h */,
+				18567F8D1B14133D00B57331 /* tcp.h */,
+				18567F8E1B14133D00B57331 /* tcp_timer.h */,
+				18567F8F1B14133D00B57331 /* tcp_var.h */,
+			);
+			path = TCPUtils;
+			sourceTree = "<group>";
+		};
 		188DFED31B10377900CC41D4 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,8 +560,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D1E14A1AA8732000117820 /* NSArray+Log.h in Headers */,
+				18567F901B14133D00B57331 /* in_pcb.h in Headers */,
 				04D1E14E1AA8732000117820 /* NSJSONSerialization+Parser.h in Headers */,
 				04D1E18C1AA8733700117820 /* GPDownloader.h in Headers */,
+				18567F911B14133D00B57331 /* socket.h in Headers */,
+				18567F931B14133D00B57331 /* sysctl.h in Headers */,
 				04D1E1841AA8733700117820 /* UIView+Animation.h in Headers */,
 				04D1E1941AA8733700117820 /* GPDownLoader.h in Headers */,
 				188DFEE11B10383D00CC41D4 /* UIColor+UIColorExt.h in Headers */,
@@ -553,15 +585,19 @@
 				04D1E1441AA8732000117820 /* MBProgressHUD.h in Headers */,
 				04D1E1501AA8732000117820 /* NSMutableURLRequest+FileUpLoad.h in Headers */,
 				04D1E1961AA8733700117820 /* GPDownLoadManager.h in Headers */,
+				18567F941B14133D00B57331 /* tcp.h in Headers */,
 				04D1E1601AA8732000117820 /* UIApplication+Setting.h in Headers */,
 				04D1E1581AA8732000117820 /* Reachability.h in Headers */,
 				04D1E1661AA8732000117820 /* UIView+Frame.h in Headers */,
+				18567F951B14133D00B57331 /* tcp_timer.h in Headers */,
 				04D1E1881AA8733700117820 /* GPDownloadManager.h in Headers */,
+				18567F921B14133D00B57331 /* socketvar.h in Headers */,
 				04F4F4E71ABE98AF00081470 /* CircleRoundLayout.h in Headers */,
 				04D1E18A1AA8733700117820 /* NSMutableURLRequest+MutableThreadDownload.h in Headers */,
 				04D1E1561AA8732000117820 /* NSString+SandBox.h in Headers */,
 				04D1E18E1AA8733700117820 /* GPDownloaderManager.h in Headers */,
 				04D1E0F91AA872EB00117820 /* category.h in Headers */,
+				18567F961B14133D00B57331 /* tcp_var.h in Headers */,
 				04D1E1471AA8732000117820 /* MBProgressHUD+GP.h in Headers */,
 				04D1E14C1AA8732000117820 /* NSDateComponents+CurDateAndTime.h in Headers */,
 				04D1E1921AA8733700117820 /* GPDownloadInfo.h in Headers */,
