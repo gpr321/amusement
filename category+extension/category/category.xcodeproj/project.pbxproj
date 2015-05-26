@@ -80,6 +80,7 @@
 		04F4F4EE1ABE98AF00081470 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */; };
 		188DFEE01B10383D00CC41D4 /* UIColor+UIColorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DFEDE1B10383D00CC41D4 /* UIColor+UIColorExt.m */; };
 		188DFEE11B10383D00CC41D4 /* UIColor+UIColorExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 188DFEDF1B10383D00CC41D4 /* UIColor+UIColorExt.h */; };
+		18977E4A1B1311D2004D9B48 /* AVEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18977E491B1311D2004D9B48 /* AVEncoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,7 @@
 		04F4F4E61ABE98AF00081470 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
 		188DFEDE1B10383D00CC41D4 /* UIColor+UIColorExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColorExt.m"; sourceTree = "<group>"; };
 		188DFEDF1B10383D00CC41D4 /* UIColor+UIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColorExt.h"; sourceTree = "<group>"; };
+		18977E491B1311D2004D9B48 /* AVEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVEncoder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 		04D1E10F1AA872F100117820 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				18977E481B1311AB004D9B48 /* Data */,
 				188DFED31B10377900CC41D4 /* UIColor */,
 				04F4F4DA1ABE986D00081470 /* 瀑布流算法 */,
 				04D1E1681AA8733700117820 /* CALayer */,
@@ -512,6 +515,14 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
+		18977E481B1311AB004D9B48 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18977E491B1311D2004D9B48 /* AVEncoder.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -657,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D1E1481AA8732000117820 /* MBProgressHUD+GP.m in Sources */,
+				18977E4A1B1311D2004D9B48 /* AVEncoder.m in Sources */,
 				04D1E18F1AA8733700117820 /* GPDownloaderManager.m in Sources */,
 				04D1E1571AA8732000117820 /* NSString+SandBox.m in Sources */,
 				04D1E14B1AA8732000117820 /* NSArray+Log.m in Sources */,
